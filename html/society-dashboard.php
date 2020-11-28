@@ -299,7 +299,7 @@ integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/k
                     echo "enter valid email";
                 }
                 else{
-                    $sql = "INSERT INTO guards VALUES ('', '$socid', '$name', '$age', '$gender', '$email', '$confirmpassword')";
+                    $sql = "INSERT INTO guards VALUES (0, '$socid', '$name', '$age', '$gender', '$email', '$confirmpassword')";
                     if ($conn->query($sql) === TRUE) {
                       echo '<script language="javascript">window.location.href ="'.$url.'"</script>';
                   
@@ -442,7 +442,7 @@ if(isset($_POST['submit'])){
                 echo "enter valid email";
             }
             else{
-               $sql = "INSERT INTO guards VALUES ('', '$socid', '$name', '$age', '$gender', '$contact', '$email', '$password')";
+               $sql = "INSERT INTO guards VALUES (0, '$socid', '$name', '$age', '$gender', '$contact', '$email', '$password')";
                if ($conn->query($sql) === TRUE) {
                 echo "New record created successfully";
               } else {

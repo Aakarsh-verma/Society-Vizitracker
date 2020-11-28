@@ -1,4 +1,4 @@
-<!-- New Visitor --><?php session_start();?>
+<?php session_start();?>
 <html>
   <style>
     :root {
@@ -208,17 +208,23 @@
                 @$temp    = $_POST['temp'];
                 @$symp    = $_POST['symp'];
                 date_default_timezone_set('Asia/Kolkata');
-                $time     = date("h:i:sa");
+                $time     = date("H:i:s");
                 $exitTIme = NULL;
-                // $socid      = $_SESSION['soc_id'];
+                $socid      = $_SESSION['soc_id'];
                 
                 if($entid&&$house&&$temp&&$symp){
-                  $enter_time = "INSERT INTO records VALUES ('', '$entid', '$house', '$temp', '$symp', '$time', NULL, '$socid')";
-                  if ($conn->query($enter_time) === TRUE) {
-                          echo "<script>alert('New record created successfully')</script>";
-                        } else {
-                          echo "<script> alert('Error: '.$enter_time.'<br>' . $conn->error.')</script>";
-                      }
+                  $check = "SELECT * FROM records where visitor_id = '$entid'";
+                  if($conn->query($check) === TRUE ){
+                    echo "<script>alert('Visitor already inside!')</script>";
+                  }
+                  else{
+                    $enter_time = "INSERT INTO records VALUES (0, '$entid', '$house', '$temp', '$symp', '$time', NULL, '$socid')";
+                    if ($conn->query($enter_time) === TRUE) {
+                            echo "<script>alert('New record created successfully')</script>";
+                            } else {
+                                   echo "Error: " . $enter_time . "<br>" . $conn->error;
+                             }
+                  }
                 }else{
                   echo "<script>alert('Please Fill All Fields')</script>";
                 }

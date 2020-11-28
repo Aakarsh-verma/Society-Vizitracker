@@ -251,7 +251,7 @@ if(isset($_POST['submit'])){
             header("location: login.php");
           } 
           else {
-            echo "Error: " . $write . "<br>" . $conn->error;
+            echo "Error: " . $sql . "<br>" . $conn->error;
           }
           $conn->close();
       }
