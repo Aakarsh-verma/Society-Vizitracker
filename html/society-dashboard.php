@@ -409,7 +409,7 @@ integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/k
                         
                         <div class="info">
                                 <div class="github-logo">
-                                        <a href=""><i class="fab fa-github"></i></a>
+                                        <a href="https://github.com/Aakarsh-verma/intp-sem5-mini-project"><i class="fab fa-github"></i></a>
                                 </div>
                         </div>
                         

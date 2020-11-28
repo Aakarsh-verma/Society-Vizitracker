@@ -1,445 +1,513 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="../css/footer.css">
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,500&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-:root {
-  --green: #2fd485;
-  --blue: #1e1f27;
-}
 
-* {
-  font-family: DM Sans, sans;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-.title p {
-  font-family: "Bebas Neue", cursive;
-  padding-top: 30px;
-}
-.title {
-  font-size: 30px;
-  color: rgb(224, 224, 224);
-  letter-spacing: 7px;
-  margin: 0px auto;
-}
-.footer-container {
-  background-color: rgb(41, 41, 41);
-  height: 200px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  bottom: 0%;
-}
-.made-by {
-  margin: 0px auto;
-}
-.made-by p {
-  font-family: Montserrat, sans-serif;
-  color: rgb(224, 224, 224);
-  font-weight: 300;
-  font-size: 15px;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/footer.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,500&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-.divider {
-  height: 0.2px;
-  width: 40%;
-  background-color: rgb(224, 224, 224);
-  margin: 0px auto;
-}
-.info {
-  margin: 10px auto;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-.fab {
-  color: rgb(224, 224, 224);
-  font-size: 35px;
-  transition: all 0.5s;
-}
+    :root {
+      --green: #2fd485;
+      --blue: #1e1f27;
+    }
 
-.fab:hover {
-  transform: scale(1.25);
-}
+    * {
+      font-family: DM Sans, sans;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
 
-@media only screen and (max-width: 400px) {
-  .made-by p {
-    font-size: 12px;
-  }
-}
+    .title p {
+      font-family: "Bebas Neue", cursive;
+      padding-top: 30px;
+    }
 
-input[type=text], select, textarea {
-  width:  100%;
-  padding: 12px;
-  border: 3px solid #ccc;
-  border-radius: 8px;
-  box-sizing: border-box;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  resize: vertical;
-}
-input[type=email], select, textarea {
-  width:  100%;
-  padding: 12px;
-  border: 3px solid #ccc;
-  border-radius: 8px;
-  box-sizing: border-box;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  resize: vertical;
-}
-.options .option {
-    margin: 0 15px;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: #7a7a7a;
-}
-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.6rem 4rem;
-    width: 100vw;
-    background-color: #ebebeb;
-}
+    .title {
+      font-size: 30px;
+      color: rgb(224, 224, 224);
+      letter-spacing: 7px;
+      margin: 0px auto;
+    }
 
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+    .footer-container {
+      background-color: rgb(41, 41, 41);
+      height: 200px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      bottom: 0%;
+    }
 
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-.logo img {
-    width: 50px;
-    height: 50px;
-}
+    .made-by {
+      margin: 0px auto;
+    }
 
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 10px;
-  width: 100%;
-}
-.add{
-	margin-top: 20px;
-	background-color: #D3D3D3;
-}
+    .made-by p {
+      font-family: Montserrat, sans-serif;
+      color: rgb(224, 224, 224);
+      font-weight: 300;
+      font-size: 15px;
+    }
 
-.address1{
-width:30%;
-float: left;
-background-color: #D3D3D3;
-height: 280px;
-text-align: center;
-}
+    .divider {
+      height: 0.2px;
+      width: 40%;
+      background-color: rgb(224, 224, 224);
+      margin: 0px auto;
+    }
 
-.map{
-	width: 70%;
-	float: left;
-}
-     #mapid { width: 200px; height: 100px; }
-</style>
+    .info {
+      margin: 10px auto;
+    }
+
+    .fab {
+      color: rgb(224, 224, 224);
+      font-size: 35px;
+      transition: all 0.5s;
+    }
+
+    .fab:hover {
+      transform: scale(1.25);
+    }
+
+    @media only screen and (max-width: 400px) {
+      .made-by p {
+        font-size: 12px;
+      }
+    }
+
+    input[type=text],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 3px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      resize: vertical;
+    }
+
+    input[type=email],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 3px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      resize: vertical;
+    }
+
+    .options .option {
+      margin: 0 15px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #7a7a7a;
+    }
+
+    header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.6rem 4rem;
+      width: 100vw;
+      background-color: #ebebeb;
+    }
+
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    .logo img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 10px;
+      width: 100%;
+    }
+
+    .add {
+      margin-top: 20px;
+      background-color: #D3D3D3;
+    }
+
+    .address1 {
+      width: 30%;
+      float: left;
+      background-color: #D3D3D3;
+      height: 280px;
+      text-align: center;
+    }
+
+    .map {
+      width: 70%;
+      float: left;
+    }
+
+    #mapid {
+      width: 200px;
+      height: 100px;
+    }
+  </style>
 </head>
+
 <body>
-<!DOCTYPE html>
-<html>
-<head>
- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-   crossorigin=""/>
-<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-   crossorigin=""></script>
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
 
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="../css/footer.css">
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,500&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-:root {
-  --green: #2fd485;
-  --blue: #1e1f27;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/footer.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,500&display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
 
-* {
-  
-  font-family: DM Sans, sans;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-.title p {
-  font-family: "Bebas Neue", cursive;
-  padding-top: 30px;
-}
-.title {
-  font-size: 30px;
-  color: rgb(224, 224, 224);
-  letter-spacing: 7px;
-  margin: 0px auto;
-}
-.footer-container {
-  background-color: rgb(41, 41, 41);
-  height: 200px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  bottom: 0%;
-}
-.made-by {
-  margin: 0px auto;
-}
-.made-by p {
-  font-family: Montserrat, sans-serif;
-  color: rgb(224, 224, 224);
-  font-weight: 300;
-  font-size: 15px;
-}
+      * {
+        box-sizing: border-box;
+      }
 
-.divider {
-  height: 0.2px;
-  width: 40%;
-  background-color: rgb(224, 224, 224);
-  margin: 0px auto;
-}
-.info {
-  margin: 10px auto;
-}
+      :root {
+        --green: #2fd485;
+        --blue: #1e1f27;
+      }
 
-.fab {
-  color: rgb(224, 224, 224);
-  font-size: 35px;
-  transition: all 0.5s;
-}
+      * {
 
-.fab:hover {
-  transform: scale(1.25);
-}
+        font-family: DM Sans, sans;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
 
-@media only screen and (max-width: 400px) {
-  .made-by p {
-    font-size: 12px;
-  }
-}
+      .title p {
+        font-family: "Bebas Neue", cursive;
+        padding-top: 30px;
+      }
 
-input[type=text], select, textarea {
-  width:  100%;
-  padding: 12px;
-  border: 3px solid #ccc;
-  border-radius: 8px;
-  box-sizing: border-box;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  resize: vertical;
-}
-input[type=email], select, textarea {
-  width:  100%;
-  padding: 12px;
-  border: 3px solid #ccc;
-  border-radius: 8px;
-  box-sizing: border-box;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  resize: vertical;
-}
-.options .option {
-    margin: 0 15px;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: #7a7a7a;
-}
-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.6rem 4rem;
-    width: 100vw;
-    background-color: #ebebeb;
-}
+      .title {
+        font-size: 30px;
+        color: rgb(224, 224, 224);
+        letter-spacing: 7px;
+        margin: 0px auto;
+      }
 
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+      .footer-container {
+        background-color: rgb(41, 41, 41);
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        bottom: 0%;
+      }
 
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-.logo img {
-    width: 50px;
-    height: 50px;
-}
+      .made-by {
+        margin: 0px auto;
+      }
 
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 10px;
-  width: 100%;
-}
-.add{
-  margin-top: 20px;
-  background-color: #D3D3D3;
-}
+      .made-by p {
+        font-family: Montserrat, sans-serif;
+        color: rgb(224, 224, 224);
+        font-weight: 300;
+        font-size: 15px;
+      }
 
-.address1{
-width:30%;
-float: left;
-background-color: #D3D3D3;
-height: 280px;
-text-align: center;
-}
-a{
-  text-decoration: none;
-}
-.map{
-  width: 70%;
-  float: left;
-}
-     #mapid { width: 100%; height: 280px; }
-</style>
-</head>
-<body>
-  <header>
-        <div class="logo">
-            <img src="../img/id.svg" alt="" />
-        </div>
-        <div class="options">
-            <a href="index.html" class="home-btn option">Home</a>
-            <a class="About-us-btn option" href="aboutus.html">About Us</a>
-            <a class="Contact-btn option" href="contactus.html">Contact</a>
-        </div>
+      .divider {
+        height: 0.2px;
+        width: 40%;
+        background-color: rgb(224, 224, 224);
+        margin: 0px auto;
+      }
+
+      .info {
+        margin: 10px auto;
+      }
+
+      .fab {
+        color: rgb(224, 224, 224);
+        font-size: 35px;
+        transition: all 0.5s;
+      }
+
+      .fab:hover {
+        transform: scale(1.25);
+      }
+
+      @media only screen and (max-width: 400px) {
+        .made-by p {
+          font-size: 12px;
+        }
+      }
+
+      input[type=text],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 3px solid #ccc;
+        border-radius: 8px;
+        box-sizing: border-box;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        resize: vertical;
+      }
+
+      input[type=email],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 3px solid #ccc;
+        border-radius: 8px;
+        box-sizing: border-box;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        resize: vertical;
+      }
+
+      .options .option {
+        margin: 0 15px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: #7a7a7a;
+      }
+
+      header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.6rem 4rem;
+        width: 100vw;
+        background-color: #ebebeb;
+      }
+
+      input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+
+      .logo img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 10px;
+        width: 100%;
+      }
+
+      .add {
+        margin-top: 20px;
+        background-color: #D3D3D3;
+      }
+
+      .address1 {
+        width: 30%;
+        float: left;
+        background-color: #D3D3D3;
+        height: 280px;
+        text-align: center;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .map {
+        width: 70%;
+        float: left;
+      }
+
+      #mapid {
+        width: 100%;
+        height: 280px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../img/id.svg" alt="" />
+      </div>
+      <div class="options">
+        <a href="index.html" class="home-btn option">Home</a>
+        <a class="About-us-btn option" href="aboutus.html">About Us</a>
+        <a class="Contact-btn option" href="contactus.html">Contact</a>
+      </div>
     </header>
- 
-<h3 style="
+
+    <h3 style="
     margin-left: 2rem;
     color: #2fd485;
 ">Contact Form</h3>
 
-<div class="container">
-  <form action="/action_page.php">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <div class="container">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Your Emailid..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Emailid..">
 
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">India</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">India</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-    <input type="submit" value="Submit">
-  </form>
-</div>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
 
-<div class="add">
-<div  class="address1">
-      <h2>Office address</h2>
-      <p style="color: #2fd485 ">Sector 16, New Panvel<br />
-        Maharashtra, India 400426<br />
-        <a href="tel:9130632505">9130632505</a>
-      </p>
-      <h4>EMAIL ADDRESS</h4>
-      <a href="mailto:info@visitracker.com">info@visitracker.com</a>
-</div>
+    <div class="add">
+      <div class="address1">
+        <h2>Office address</h2>
+        <p style="color: #2fd485 ">Sector 16, New Panvel<br />
+          Maharashtra, India 400426<br />
+          <a href="tel:9130632505">9130632505</a>
+        </p>
+        <h4>EMAIL ADDRESS</h4>
+        <a href="mailto:info@visitracker.com">info@visitracker.com</a>
+      </div>
 
-<div class="map">
- <div id="mapid"></div>
-<script>
-  var mymap = L.map('mapid').setView([18.98988, 73.128775], 16);
+      <div class="map">
+        <div id="mapid"></div>
+        <script>
+          var mymap = L.map('mapid').setView([18.98988, 73.128775], 16);
 
-var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
-         
-         // Adding layer to the map
-         mymap.addLayer(layer);
+          var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
 
-var marker = L.marker([18.98988, 73.128775]).addTo(mymap);
+          // Adding layer to the map
+          mymap.addLayer(layer);
 
-var circle = L.circle([18.98988, 73.128775], {
-    color: 'red',
-    fillColor: '#f03',
-    fillOpacity: 0.5,
-    radius: 100
-}).addTo(mymap);
+          var marker = L.marker([18.98988, 73.128775]).addTo(mymap);
 
-marker.bindPopup("<b>Pillai College of Engineering!</b><br>visit us here!").openPopup();
+          var circle = L.circle([18.98988, 73.128775], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 100
+          }).addTo(mymap);
 
-var popup = L.popup();
+          marker.bindPopup("<b>Pillai College of Engineering!</b><br>visit us here!").openPopup();
 
-function onMapClick(e) {
-    popup
-        .setLatLng(e.latlng)
-        .setContent("You clicked the map at " + e.latlng.toString())
-        .openOn(mymap);
-}
+          var popup = L.popup();
 
-mymap.on('click', onMapClick);
-</script>
+          function onMapClick(e) {
+            popup
+              .setLatLng(e.latlng)
+              .setContent("You clicked the map at " + e.latlng.toString())
+              .openOn(mymap);
+          }
 
-</div>
-</div>
- 
+          mymap.on('click', onMapClick);
+        </script>
 
-        <div class="footer-container">
-                <div class="title"><p>Visitracker</p></div>
-                <div class="divider">
+      </div>
+    </div>
 
-                </div>
-                <div class="made-by">
-                        <p>Project made by Aakarsh, Akshay, Neel and Pramod</p>
-                </div>
-                
-                <div class="info">
-                        <div class="github-logo">
-                                <a href=""><i class="fab fa-github"></i></a>
-                        </div>
-                </div>
-                
 
+    <div class="footer-container">
+      <div class="title">
+        <p>Visitracker</p>
+      </div>
+      <div class="divider">
+
+      </div>
+      <div class="made-by">
+        <p>Project made by Aakarsh, Akshay, Neel and Pramod</p>
+      </div>
+
+      <div class="info">
+        <div class="github-logo">
+          <a href="https://github.com/Aakarsh-verma/intp-sem5-mini-project"><i class="fab fa-github"></i></a>
         </div>
+      </div>
+
+
+    </div>
+
+  </body>
+
+  </html>
 
 </body>
-</html>
- 
-</body>
+
 </html>

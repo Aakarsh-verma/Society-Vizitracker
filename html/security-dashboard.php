@@ -153,7 +153,7 @@
                 </div>
                 <div class="info">
                         <div class="github-logo">
-                                <a href=""><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/Aakarsh-verma/intp-sem5-mini-project"><i class="fab fa-github"></i></a>
                         </div>
                 </div>
                 

@@ -2,84 +2,94 @@
 <html lang="en">
 
 <head>
-  <style>.buttons {
-    position: relative;
-    /* margin: 0 auto 20px auto; */
-    padding: 20px;
-    /* float: left; */
-    display: block;
-    background-color: #eee;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .buttons:after {
-    top: 100%;
-    left: 50%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: rgba(238, 238, 238, 0);
-    border-top-color: #eee;
-    border-width: 10px;
-    margin-left: -10px;
-  }
-  .button {
-    padding: 10px 20px;
-    font-weight: bold;
-    letter-spacing: 5px;
-    outline: none;
-    cursor: pointer;
-    color: white;
-    background-color: #7F8C8D;
-    border: none;
-    border-radius: 4px;
-    
-  }
-  .video-wrappper{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-  #play-button {
-    background-color: #2ECC71;
-  }
-  #play-button:hover {
-    background-color: #27AE60;
-  }
-  #pause-button {
-    background-color: #E67E22;
-  }
-  #pause-button:hover {
-    background-color: #D35400;
-  }
-  #stop-button {
-    background-color: #E74C3C;
-  }
-  #stop-button:hover {
-    background-color: #C0392B;
-  }
-  #pause-button,
-  #stop-button {
-    margin-left: 15px;
-  }
-  iframe {
-    margin: 0 auto;
-    width: 560px;
-    height: 315px;
-    /* float: left; */
-    clear: both;
-    display: block;
-    background-color: #eee;
-  }
-  
-  
+  <style>
+    .buttons {
+      position: relative;
+      /* margin: 0 auto 20px auto; */
+      padding: 20px;
+      /* float: left; */
+      display: block;
+      background-color: #eee;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .buttons:after {
+      top: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(238, 238, 238, 0);
+      border-top-color: #eee;
+      border-width: 10px;
+      margin-left: -10px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-weight: bold;
+      letter-spacing: 5px;
+      outline: none;
+      cursor: pointer;
+      color: white;
+      background-color: #7F8C8D;
+      border: none;
+      border-radius: 4px;
+
+    }
+
+    .video-wrappper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    #play-button {
+      background-color: #2ECC71;
+    }
+
+    #play-button:hover {
+      background-color: #27AE60;
+    }
+
+    #pause-button {
+      background-color: #E67E22;
+    }
+
+    #pause-button:hover {
+      background-color: #D35400;
+    }
+
+    #stop-button {
+      background-color: #E74C3C;
+    }
+
+    #stop-button:hover {
+      background-color: #C0392B;
+    }
+
+    #pause-button,
+    #stop-button {
+      margin-left: 15px;
+    }
+
+    iframe {
+      margin: 0 auto;
+      width: 560px;
+      height: 315px;
+      /* float: left; */
+      clear: both;
+      display: block;
+      background-color: #eee;
+    }
   </style>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -91,9 +101,13 @@
 
   <!-- footer utils -->
   <link rel="stylesheet" href="../css/footer.css">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,500&display=swap"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
 </head>
 
 <body>
@@ -111,7 +125,9 @@
     <div class="info">
       <h2>Visitracker</h2>
       <p>
-        A web-app to to facilitate a society with a centralised system to keep track of visitors and society members going out of society daily. It is a management and tracking system developed for the safer functioning of residential societies.
+        A web-app to to facilitate a society with a centralised system to keep track of visitors and society members
+        going out of society daily. It is a management and tracking system developed for the safer functioning of
+        residential societies.
       </p>
       <p>
         One time registration required for a society as well as a new visitor.
@@ -137,86 +153,91 @@
       </div>
     </div>
 
-    
-    
+
+
   </main>
-  <script>  
-var player;
+  <script>
+    var player;
 
 
-function onYouTubePlayerAPIReady() {
-    
-    player = new YT.Player('video', {
+    function onYouTubePlayerAPIReady() {
+
+      player = new YT.Player('video', {
         events: {
-         
-            'onReady': onPlayerReady
+
+          'onReady': onPlayerReady
         }
-    });
-}
+      });
+    }
 
-function onPlayerReady(event) {
+    function onPlayerReady(event) {
 
-    
-    var playButton = document.getElementById("play-button");
-    playButton.addEventListener("click", function() {
+
+      var playButton = document.getElementById("play-button");
+      playButton.addEventListener("click", function () {
         player.playVideo();
-    });
+      });
 
-    var pauseButton = document.getElementById("pause-button");
-    pauseButton.addEventListener("click", function() {
+      var pauseButton = document.getElementById("pause-button");
+      pauseButton.addEventListener("click", function () {
         player.pauseVideo();
-    });
+      });
 
-    var stopButton = document.getElementById("stop-button");
-    stopButton.addEventListener("click", function() {
+      var stopButton = document.getElementById("stop-button");
+      stopButton.addEventListener("click", function () {
         player.stopVideo();
-    });
+      });
 
-}
+    }
 
 
-var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/player_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-</script>
-<div class="video-wrapper">
-  <div class="buttons">
-		<button class="button" id="play-button">PLAY</button>
-		<button class="button" id="pause-button">PAUSE</button>
-    <button class="button" id="stop-button">STOP</button>
-   
-	</div>
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/player_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  </script>
+  <div class="video-wrapper">
+    <div class="buttons">
+      <button class="button" id="play-button">PLAY</button>
+      <button class="button" id="pause-button">PAUSE</button>
+      <button class="button" id="stop-button">STOP</button>
 
-	<!-- Make sure ?enablejsapi=1 is in URL -->
-  <iframe class="video" id="video" src="https://www.youtube.com/embed/PoHhtIwajGU?enablejsapi=1&html5=1" frameborder="0" allowfullscreen></iframe>
-</div>   
+    </div>
 
-  
+    <!-- Make sure ?enablejsapi=1 is in URL -->
+    <iframe class="video" id="video" src="https://www.youtube.com/embed/PoHhtIwajGU?enablejsapi=1&html5=1"
+      frameborder="0" allowfullscreen></iframe>
+  </div>
+
+
   <footer>
-    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 200px; width: 100%;"><path d="M0.00,49.99 C154.85,126.60 388.48,18.05 500.00,49.99 L500.22,341.74 L-4.28,148.31 Z" style="stroke: none; fill: #2fd485;"></path>
-    
-    
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 200px; width: 100%;">
+      <path d="M0.00,49.99 C154.85,126.60 388.48,18.05 500.00,49.99 L500.22,341.74 L-4.28,148.31 Z"
+        style="stroke: none; fill: #2fd485;"></path>
+
+
     </svg>
     <div class="footer-container">
-      <div class="title"><p>Visitracker</p></div>
+      <div class="title">
+        <p>Visitracker</p>
+      </div>
       <div class="divider">
 
       </div>
       <div class="made-by">
-              <p>Project made by Aakarsh, Akshay, Neel and Pramod</p>
+        <p>Project made by Aakarsh, Akshay, Neel and Pramod</p>
       </div>
-      
-      <div class="info">
-              <div class="github-logo">
-                      <a href=""><i class="fab fa-github"></i></a>
-              </div>
-      </div>
-      
 
-</div>
+      <div class="info">
+        <div class="github-logo">
+          <a href="https://github.com/Aakarsh-verma/intp-sem5-mini-project"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+
+    </div>
   </footer>
-    
+
 </body>
 
 </html>
