@@ -1,0 +1,181 @@
+  :root {
+    --green: #2fd485;
+    --blue: #1e1f27;
+}
+  
+* {
+    font-family: DM Sans, sans;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+  
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 4rem;
+    width: 100vw;
+    background-color: #ebebeb;
+}
+
+.options .option {
+    margin: 0 15px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #7a7a7a;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+.heading{
+    margin-left: 2rem;
+    color: #2fd485;
+}
+@media only screen and (max-width: 570px) {
+    header {
+      padding: 1rem;
+    }
+    .options {
+      display: flex;
+      flex-direction: row;
+    }
+    .reg-card{
+        max-width: 80%;
+    }
+}
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+} 
+.tablink {
+    background-color: transparent;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+    border-bottom: 0.05rem solid;
+}
+
+.tablink:hover {
+    border-bottom: 3px solid #2fd485;
+}
+
+.tablink:focus {
+    scroll-behavior: smooth;
+    color: #2fd485;
+    border-bottom: 3px solid #2fd485;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    display: block;
+    padding: 100px 20px;
+    height: 100%;
+}
+.form-control{
+    display: inline-block;
+}
+ #mapid { 
+        width: 500px; height: 500px;  
+
+    }
+form input[name="field"], select {
+    outline: none;
+    display: inline-flex;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    border-radius: 0.3rem;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    font-weight: 400;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+form input:focus, select{
+    border: 1px solid midnightblue;
+    color: #333333;
+}
+form button {
+    cursor: pointer;
+    background:midnightblue;
+    width: 100%;
+    height: 50px;
+    border: 0;
+    margin-bottom: 30px;
+    border-radius: 0.8rem;
+    padding: 10px 15px;
+    color: #ffffff;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+form button:hover {
+    display: inline-block;
+    background: #178ab4;
+} 
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    border-radius: 0.25rem;
+  }
+  
+  .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+  }
+  
+  .card-title {
+    margin-bottom: 0.75rem;
+  }
+  
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .flex-container-center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+  }
+  
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  

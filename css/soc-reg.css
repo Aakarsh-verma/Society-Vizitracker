@@ -1,0 +1,122 @@
+:root {
+    --green: #2fd485;
+    --blue: #1e1f27;
+}
+  
+* {
+    font-family: DM Sans, sans;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 4rem;
+    width: 100vw;
+    background-color: #ebebeb;
+}
+.options .option {
+    margin: 0 15px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #7a7a7a;
+}
+  
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.reg-card{
+    display: flexbox;
+    background-color: var(--green);
+    max-width: 50%;
+    max-height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20pt;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+  }
+.card-title{
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+    color: midnightblue;
+}
+  .container {
+    width: 60%;
+    clear: both;
+    align-items: center;
+  }
+  
+  .container input {
+    width: 100%;
+    clear: both;
+    align-items: center;
+}
+input {
+    outline: none;
+    display: inline-flex;
+    width: 45%;
+    border: 1px solid #d9d9d9;
+    border-radius: 0.3rem;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    font-weight: 400;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+input:focus {
+    border: 1px solid midnightblue;
+    color: #333333;
+}
+button {
+    cursor: pointer;
+    background:midnightblue;
+    width: 45%;
+    height: 50px;
+    border: 0;
+    margin-bottom: 30px;
+    border-radius: 0.8rem;
+    padding: 10px 15px;
+    color: #ffffff;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+button:hover {
+    background: #178ab4;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-area: info;
+}
+  
+@media only screen and (max-width: 570px) {
+    header {
+      padding: 1rem;
+    }
+    .options {
+      display: flex;
+      flex-direction: row;
+    }
+    .reg-card{
+        max-width: 80%;
+    }
+}
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}

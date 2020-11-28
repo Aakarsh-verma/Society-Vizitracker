@@ -1,0 +1,121 @@
+:root {
+  --green: #2fd485;
+  --blue: #1e1f27;
+}
+
+* {
+  font-family: DM Sans, sans;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.about-us-top {
+  height: 500px;
+  background-color: rgba(1, 0.5, 0, 1);
+  background: url(../img/about-us-1.jpg) no-repeat fixed center;
+  overflow: hidden;
+  background-size: cover;
+}
+/* .about-us-top::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.6);
+} */
+.about-us-top .about-us-heading p {
+  width: auto;
+  color: white;
+  font-size: 60px;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 5px;
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 200px;
+  position: relative;
+  z-index: 100;
+}
+/* .container {
+  position: relative;
+  z-index: 100;
+} */
+/* .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: ;
+} */
+.about-us-team-members {
+  height: 350px;
+  padding-top: 75px;
+  padding-left: 50px;
+}
+.about-us-bottom {
+  height: 500px;
+  background-color: rgba(1, 0.5, 0, 1);
+  background: url(../img/about-us-2.jpg) no-repeat fixed center;
+  overflow: hidden;
+  background-size: cover;
+}
+/* .about-us-bottom::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.6);
+} */
+/* .about-us-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 500px;
+  background-image: url(about.jpg);
+}
+.about-us-heading .line {
+  width: 25px;
+  height: 20px;
+  color: black;
+} */
+.about-us-top {
+  font-family: "Bebas Neue", cursive;
+}
+.made-by,
+.member {
+  font-size: 30px;
+}
+
+.member .fab {
+  color: #2fd485;
+  font-size: 25px;
+}
+.google-map {
+  background-color: rgb(41, 41, 41);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0 15px 0;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #e9e9e9;
+}
+
+body::-webkit-scrollbar {
+  width: 20px;
+  background-color: #cfcfcf;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+
+  background-color: #adadad;
+}

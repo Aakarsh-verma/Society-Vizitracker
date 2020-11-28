@@ -1,0 +1,202 @@
+  :root {
+    --green: #2fd485;
+    --blue: #1e1f27;
+}
+  
+* {
+    font-family: DM Sans, sans;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+  
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 4rem;
+    width: 100vw;
+    background-color: #ebebeb;
+}
+
+.options .option {
+    margin: 0 15px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #7a7a7a;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+.heading{
+    margin-left: 2rem;
+    color: #2fd485;
+}
+@media only screen and (max-width: 570px) {
+    header {
+      padding: 1rem;
+    }
+    .options {
+      display: flex;
+      flex-direction: row;
+    }
+    .reg-card{
+        max-width: 80%;
+    }
+}
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+} 
+.tablink {
+    background-color: transparent;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+    border-bottom: 0.05rem solid;
+}
+
+.tablink:hover {
+    border-bottom: 3px solid #2fd485;
+}
+
+.tablink:focus {
+    scroll-behavior: smooth;
+    color: #2fd485;
+    border-bottom: 3px solid #2fd485;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    /* display: none;   */
+    padding: 100px 20px;
+    height: 100%;
+}
+.form-control{
+    display: inline-block;
+}
+ #mapid { 
+        width: 50%; height: 50%;  
+        position: absolute;
+        margin: auto;
+
+   
+    left: 0;
+    right: 0;
+    }
+form input[name="field"], select {
+    outline: none;
+    display: inline-flex;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    border-radius: 0.3rem;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    font-weight: 400;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+form input:focus, select{
+    border: 1px solid midnightblue;
+    color: #333333;
+}
+form button {
+    cursor: pointer;
+    background:midnightblue;
+    width: 100%;
+    height: 50px;
+    border: 0;
+    margin-bottom: 30px;
+    border-radius: 0.8rem;
+    padding: 10px 15px;
+    color: #ffffff;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+form button:hover {
+    display: inline-block;
+    background: #178ab4;
+} 
+@media only screen and (max-width: 570px) {
+ 
+
+    header {
+      padding: 1rem;
+    }
+    .options {
+      display: flex;
+      flex-direction: row;
+    }
+    .options .option {
+      font-size: 0.8rem;
+    }
+  
+  }
+
+  .btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .btn {
+      transition: none;
+    }
+  }
+  
+  .btn:hover {
+    color: #212529;
+    text-decoration: none;
+  }
+  
+  .btn:focus, .btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+  
+  .btn-success:hover {
+    color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34;
+  }
+  
+  .btn-success:focus, .btn-success.focus {
+    color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34;
+    box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
+  }
